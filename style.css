@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* universal */
+.quicksand-regular {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0rem 8.8125rem;
+}
+
+/* #FEA301  #01ACFD #05D4DF #5D58EF */
+:root {
+    --color-primary: #FEA301;
+    --color-secondary: #01ACFD;
+    --color-accent: #05D4DF;
+    --color-highlight: #5D58EF;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+
+/* Navigation Bar Start */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11.625rem;
+    /* gap between each nav Item */
+    padding: 1.25rem 0rem;
+    /* padding top and bottom */
+}
+
+/* Navigation Bar Logo */
+.nav>.nav_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+/* Navigation anchor List */
+nav>ul,
+a {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* different color to different anchor */
+#home .nav__link {
+    color: var(--color-primary);
+}
+
+#about .nav__link {
+    color: var(--color-secondary);
+}
+
+#facilities .nav__link {
+    color: var(--color-accent);
+}
+
+#admission .nav__link {
+    color: var(--color-highlight);
+}
+
+/* Navigation Bar End Button */
+.contact_btn {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.625rem 3.75rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 0rem;
+}
+
+.contact_btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    cursor: pointer;
+    border: 0.0625rem solid var(--color-primary);
+}
+
+/* Navigation Bar End */
