@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kid's School</title>
     <link rel="stylesheet" href="assets/kids_school.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body class="quicksand-regular">
@@ -46,40 +46,49 @@
         </div>
     <main class="main">
         <section class="curriculum">
-            <h1 class="cur_title">Our Stories</h1>
+            <h1 class="cur_title">Standard Curriculum</h1>
             <div class="cur_card_container">
-                <div class="cur_card">
-                    <img src="assets/card1.png" alt="Card Image" class="card_img">
-                    <button class="card_btn">Read More</button>
-                    <h1 class="card_title">Card Title 1</h1>
-                    <p class="card_subtitle">This is the subtitle for card 1.</p>
+
+                <div class="cur_card" id="card1">
+                    <div class="cur_card_contents">
+                        <img src="assets/kinder.png" alt="Card 1 Image" class="card_img">
+                        <h1 class="card_title">Kinder (3-6) Years</h1>
+                        <p class="card_subtitle">Admission for kindergarten is open. Enroll your child for a bright future today!</p>
+                    </div>
+                    <a href="#" class="read_more_btn" id="btn1">Read More</a>
                 </div>
-                <div class="cur_card">
-                    <img src="assets/card2.png" alt="Card Image" class="card_img">
-                    <button class="card_btn">Read More</button>
-                    <h1 class="card_title">Card Title 2</h1>
+
+                <div class="cur_card" id="card2">
+                    <div class="cur_card_contents">
+                        <img src="assets/elementary.png" alt="Card 2 Image" class="card_img">
+                        <h1 class="card_title">Elementary School</h1>
+                        <p class="card_subtitle">Enroll your child in our elementary school for a strong educational foundation and bright future.</p>
+                    </div>
+                    <a href="#" class="read_more_btn" id="btn2">Read More</a>
                 </div>
-                <div class="cur_card">
-                    <img src="assets/card3.png" alt="Card Image" class="card_img">
-                    <button class="card_btn">Read More</button>
-                    <h1 class="card_title">Card Title 3</h1>
+                
+                <div class="cur_card" id="card3">
+                    <div class="cur_card_contents">
+                        <img src="assets/middle.png" alt="Card 3 Image" class="card_img">
+                        <h1 class="card_title">Middle (10-16) Years</h1>
+                        <p class="card_subtitle">Enroll your child in our middle school to develop critical thinking, creativity, and leadership skills.</p>
+                    
+                    </div>
+                    <a href="#" class="read_more_btn" id="btn3">Read More</a>
                 </div>
-                <div class="cur_card">
-                    <img src="assets/card4.png" alt="Card Image" class="card_img">
-                    <button class="card_btn">Read More</button>
-                    <h1 class="card_title">Card Title 4</h1>
-                </div>
-                <div class="cur_card">
-                    <img src="assets/card5.png" alt="Card Image" class="card_img">
-                    <button class="card_btn">Read More</button>
-                    <h1 class="card_title">Card Title 5</h1>
-                </div>
+
             </div>
-            <button class="cur_nav_btn"></button><button class="card_nav_btn"></button>
+
+            <div class="btn_container">
+                <button id="cur_nav_btn_left">
+                    <img src="assets/left-arrow.png" alt="">
+                    <button id="cur_nav_btn_right">
+                        <img src="assets/right-arrow.png" alt="">
+                    </button>
+            </div>
+
         </section>
     </main>
-
-
 </body>
 
 </html>
