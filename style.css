@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* universal */
@@ -26,7 +27,6 @@ body {
     --color-black: #000000;
     --color-white: #ffffff;
 }
-
 
 /* Navigation Bar Start */
 .nav {
@@ -102,3 +102,69 @@ a {
 }
 
 /* Navigation Bar End */
+
+
+/* Banner section start */
+.banner_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.banner_contents {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.banner_title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+/* different color to different anchor */
+.banner_title>a#empower {
+    color: var(--color-primary);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.banner_title>a#vision {
+    color: var(--color-secondary);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.banner_subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.banner_btn {
+    box-sizing: border-box;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.625rem 3.75rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0rem;
+}
+
+.banner_btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    border: 0.0625rem solid var(--color-black);
+}
+
+/* Banner section End */
+
